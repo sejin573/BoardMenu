@@ -136,7 +136,7 @@ public class MenuController {
 	public  String   update( MenuVo menuVo  ) {
 		
 		// 수정
-		
+		menuMapper.updateMenu(menuVo);
 		
 		// 수정후 조회
 		return  "redirect:/Menus/List";  
